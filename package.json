@@ -21,6 +21,7 @@
     "*.{ts,tsx,jsx,js}": "npm run lint-staged"
   },
   "dependencies": {
+    "jotai": "2.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
