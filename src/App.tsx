@@ -1,11 +1,10 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import jotaiLogo from "/jotai.png";
 import "./App.css";
+import Counter from "./components/Counter/Counter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -15,12 +14,13 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        <a href="https://jotai.dev" target="_blank">
+          <img src={jotaiLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Vite + React + Jotai</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
