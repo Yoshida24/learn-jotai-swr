@@ -1,6 +1,11 @@
 import "./style.css";
 import { atom, useAtom } from "jotai";
 
+/**
+ * Atoms Difinition
+ */
+
+// Basic Atom
 const countAtom = atom(0);
 
 // Derived Atom
@@ -20,6 +25,10 @@ const asyncRandomAtom = atom(
     set(countAtom, randomNum);
   },
 );
+
+/**
+ * Components Difinition
+ */
 
 function Minus() {
   const [, setCount] = useAtom(countAtom);
